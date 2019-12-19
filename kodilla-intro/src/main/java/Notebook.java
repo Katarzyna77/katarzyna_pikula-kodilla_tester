@@ -1,9 +1,8 @@
-public class Notebook {//review TODO: this class can be package-private
-    int weight;//review TODO: despite the tutorial suggests to use package-private fields, pls change to private and use getters and setters
-    //https://www.quora.com/What-is-the-use-of-getters-and-setters-in-java
+class Notebook {
 
-    int price;
-    int year;
+    private final int weight;
+    private final int price;
+    private final int year;
 
     public Notebook(int weight, int price, int year) {
         this.weight = weight;
@@ -11,32 +10,47 @@ public class Notebook {//review TODO: this class can be package-private
         this.year = year;
 
     }
+
     public void checkPrice() {
-        if(this.price < 601){//review TODO: BUG. What if price == 600?
+        if (this.price < 600) {
             System.out.println("This notebook is very cheap.");
-        } else if(this.price > 601 && this.price < 1201){
+        } else if (this.price <= 1000) {
             System.out.println("The price is good.");
-        } else{
+        } else {
             System.out.println("This notebook is expensive.");
         }
     }
-    public void checkWeight(){
-        if(this.weight < 601){//review TODO: BUG. What if weight == 600?
+
+    public void checkWeight() {
+        if (this.weight <= 600) {
             System.out.println("This notebook is light.");
-        }else if(this.weight >601 && this.weight <2000){
+        } else if (this.weight <= 1200) {
             System.out.println("This notebook isn't very heavy.");
-        }else{
+        } else {
             System.out.println("This notebook is very heavy.");
         }
     }
-    public void checkYear(){
-        if(this.year >2018){//review TODO: BUG. What if year == 2018?
+
+    public void checkYear() {
+        if (this.year >= 2019) {
             System.out.println("This notebook is new.");
-        }  else if(this.year <2018 && this.year>2013){
+        } else if (this.year >= 2016) {
             System.out.println("This notebook isn't very old.");
         } else {
             System.out.println("This notebook is old.");
         }
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public int getYear() {
+        return year;
     }
 }
 
