@@ -1,4 +1,4 @@
-public class FirstClass {
+public class FirstClass {//review TODO: pls use formatting Ctrl+Alt+L in IntelliJ
     public static void main (String[] args) {
         Notebook notebook = new Notebook(600, 1000, 2016);
         System.out.println(notebook.weight + " " + notebook.price + " " + notebook.year);
