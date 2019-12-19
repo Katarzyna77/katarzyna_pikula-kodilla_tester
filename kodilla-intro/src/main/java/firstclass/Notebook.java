@@ -1,3 +1,5 @@
+package firstclass;
+
 class Notebook {
 
     private final int weight;
