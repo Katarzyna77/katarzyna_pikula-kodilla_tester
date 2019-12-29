@@ -13,7 +13,7 @@ public class SimpleArray {
         System.out.println(numberOfPets);
         System.out.println("Moja tablica zawiera 5 elementow");
 
-        int i = 0;
+        int i;
 
         for(i = 0; i < pets.length; i++) {
             System.out.println(pets [i]);
