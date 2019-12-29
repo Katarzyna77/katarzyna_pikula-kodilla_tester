@@ -1,5 +1,7 @@
 package year;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class LeapYear {
     public static void main(String[] args) {
         LeapYear leapYear = new LeapYear();
@@ -10,4 +12,6 @@ public class LeapYear {
     public boolean checkYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 4 == 0 && year % 400 == 0);
     }
+
 }
+
