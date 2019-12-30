@@ -1,36 +1,45 @@
 package numbers;
 
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class RandomNumbers {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         Random random = new Random();
+        int sum = 0;
+
+        ArrayList<Integer> drawnNumbers = new ArrayList<>();
 
         for (int i = 0; i <= 30; i++) {
-            System.out.println(random.nextInt(30));
-        }
+            int drawn = random.nextInt(30);
+            drawnNumbers.add(drawn);
+            sum += drawn;
+            if (sum > 5000) {
+                break;
+            }
 
-    System.out.println();
+            System.out.println("Max = " + findMax(drawnNumbers));
+            System.out.println(drawn + "," + sum);
 
-    }
-    public int getResult (){ //TODO REVIEW kdrzazga: method not used
-        Random random = new Random();
-        int max = 5000;
-        int result = 0;
-        int sum = 0;
-        while (sum < max) {
-            int temp = random.nextInt(31);
-            sum = sum + temp;
-            result++;
 
         }
-        return result;
+
+        System.out.println();
 
     }
 
+    private static int findMax(ArrayList<Integer> drawnNumbers) {
+        int max = -2000000000;
+        for (int i = 0; i < drawnNumbers.size(); i++) {
+            if (drawnNumbers.get(i) > max) {
+                max = drawnNumbers.get(i);
+            }
 
-
-
+        }
+        return max;
+    }
 
 
 }

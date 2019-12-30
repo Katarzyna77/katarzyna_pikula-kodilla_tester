@@ -1,14 +1,10 @@
 package com.kodilla.inheritance;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
-import java.sql.SQLOutput;  //TODO REVIEW: remove unused import
-
 public class Car {
     private int wheels;
-    private  int seats;
+    private int seats;
 
-    public Car (int wheels, int seats) {
+    public Car(int wheels, int seats) {
         this.wheels = wheels;
         this.seats = seats;
     }
@@ -25,11 +21,11 @@ public class Car {
         System.out.println("Number of seats" + " " + seats);
     }
 
-
     public int getWheels() {
         return wheels;
     }
-    public  int getSeats() {
+
+    public int getSeats() {
         return seats;
     }
 }

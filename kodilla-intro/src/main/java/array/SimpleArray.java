@@ -15,13 +15,13 @@ public class SimpleArray {
 
         int i;
 
-        for(i = 0; i < pets.length; i++) {
-            System.out.println(pets [i]);
+        for (i = 0; i < pets.length; i++) {
+            System.out.println(pets[i]);
         }
 
         System.out.println();
 
-        for(i = pets.length - 1; i >= 0; i--) {
+        for (i = pets.length - 1; i >= 0; i--) {
             System.out.println(pets[i]);
         }
     }
