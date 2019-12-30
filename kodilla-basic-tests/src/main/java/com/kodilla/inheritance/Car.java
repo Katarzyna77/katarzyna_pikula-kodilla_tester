@@ -2,7 +2,7 @@ package com.kodilla.inheritance;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
-import java.sql.SQLOutput;
+import java.sql.SQLOutput;  //TODO REVIEW: remove unused import
 
 public class Car {
     private int wheels;

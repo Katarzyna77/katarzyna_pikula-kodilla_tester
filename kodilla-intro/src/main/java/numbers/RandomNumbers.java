@@ -13,7 +13,7 @@ public class RandomNumbers {
     System.out.println();
 
     }
-    public int getResult (){
+    public int getResult (){ //TODO REVIEW kdrzazga: method not used
         Random random = new Random();
         int max = 5000;
         int result = 0;
