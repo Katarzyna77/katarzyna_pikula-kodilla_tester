@@ -2,7 +2,6 @@ package numbers;
 
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class RandomNumbers {
@@ -32,9 +31,9 @@ public class RandomNumbers {
 
     private static int findMax(ArrayList<Integer> drawnNumbers) {
         int max = -2000000000;
-        for (int i = 0; i < drawnNumbers.size(); i++) {
-            if (drawnNumbers.get(i) > max) {
-                max = drawnNumbers.get(i);
+        for (Integer drawnNumber : drawnNumbers) {
+            if (drawnNumber > max) {
+                max = drawnNumber;
             }
 
         }
