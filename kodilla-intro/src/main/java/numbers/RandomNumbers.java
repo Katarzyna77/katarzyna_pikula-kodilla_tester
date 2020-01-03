@@ -19,18 +19,20 @@ public class RandomNumbers {
                 break;
             }
 
+            System.out.println(drawnNumbers);
             System.out.println("Max = " + findMax(drawnNumbers));
+            System.out.println("Min = " + findMin(drawnNumbers));
             System.out.println(drawn + "," + sum);
 
-
         }
-
-        System.out.println();
 
     }
 
     private static int findMax(ArrayList<Integer> drawnNumbers) {
         int max = -2000000000;
+
+        drawnNumbers.stream().max(Integer::compareTo);
+
         for (Integer drawnNumber : drawnNumbers) {
             if (drawnNumber > max) {
                 max = drawnNumber;
@@ -38,6 +40,20 @@ public class RandomNumbers {
 
         }
         return max;
+    }
+
+    private static int findMin(ArrayList<Integer> drawnNumbers) {
+        int min = 2000000000;
+
+        drawnNumbers.stream().min(Integer::compareTo);
+
+        for (Integer drawnNumber : drawnNumbers) {
+            if (drawnNumber < min) {
+                min = drawnNumber;
+            }
+
+        }
+        return min;
     }
 
 
