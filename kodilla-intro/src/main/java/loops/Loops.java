@@ -14,12 +14,12 @@ public class Loops {
         for (int i = 0; i <= numbers.length; i++) {
             total += i;
         }
-        System.out.println(total);
+        System.out.println("Total" + " " + total);
 
         int product = 1;
         for (int i = 1; i <= numbers.length; i++) {
             product *= i;
         }
-        System.out.println(product);
+        System.out.println("Product" + " " + product);
     }
 }
