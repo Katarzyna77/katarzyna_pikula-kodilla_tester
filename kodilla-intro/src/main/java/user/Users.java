@@ -8,7 +8,7 @@ public class Users {
         User user3 = new User("Victor", 40);
         User user4 = new User("Tom", 26);
         User user5 = new User("Anna", 22);
-
+        //TODO: Review: kdrzazga Users should be created in an array, not as single instances (utwórz tablicę obiektów typu User i wypełnij ją dowolnymi obiektami)
 
         int sum = user1.getAge() + user2.getAge() + user3.getAge() + user4.getAge() + user5.getAge();
 
@@ -17,6 +17,7 @@ public class Users {
         int drawn = sum / 5;
         System.out.println("The drawn of users' age is " + drawn);
 
+        //TODO: Review: kdrzazga No for loop (W pętli for wyświetl imiona użytkowników, których wiek jest poniżej średniej wieku.)
         if (user1.getAge() < drawn) {
             System.out.println("This user's age is smaller than the drawn of users' age: " + user1.getName());
         } else {
